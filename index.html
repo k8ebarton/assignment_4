@@ -2,11 +2,6 @@
 <html>
 <head>
 	<title>Hover States</title>
-	<style type="text/css">
-		<!--
-		a: link {color: #000000; text-decoration: none}
-	--> 
-	</style>
 	<style>
 		.flex-container {
 			display: flex;
@@ -16,16 +11,17 @@
 		.flex-item {
 			width: 100px;
 			height: 100px;
-			background: white;
+			background: blue;
 			margin: 35px;
 			padding: 10px;
 			text-align: center;
 			font-size: 32pt;
+			transition: width .5s ease-in;
 		}
 		.flex-item:hover {
 			transform: rotate(180deg);
-			background-color: blue;
-			color: white;
+			background-color: white;
+			width: 200px;
 		}
 		body {
 			background-image: url("matisse20.jpg")
