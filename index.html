@@ -2,20 +2,30 @@
 <html>
 <head>
 	<title>Hover States</title>
+	<style type="text/css">
+		<!--
+		a: link {color: #000000; text-decoration: none}
+	--> 
+	</style>
 	<style>
 		.flex-container {
 			display: flex;
 			justify-content: center;
+			flex-direction: row;
 		}
 		.flex-item {
-			width: 80px;
-			height: 80px;
+			width: 100px;
+			height: 100px;
 			background: white;
-			flex-direction: row;
 			margin: 35px;
 			padding: 10px;
 			text-align: center;
-			font-size: 18pt;
+			font-size: 32pt;
+		}
+		.flex-item:hover {
+			transform: rotate(180deg);
+			background-color: blue;
+			color: white;
 		}
 		body {
 			background-image: url("matisse20.jpg")
@@ -25,21 +35,20 @@
 <body>
 	<div class="flex-container">
 				<div class="flex-item">
-					<a href="index.html">HOVER 1</a>
+					<a href="index.html">1</a>
 				</div>
 				<div class="flex-item">
-					<a href="hover-state_1.html">HOVER 2</a>
+					<a href="hover-state_1.html">2</a>
 				</div>
 				<div class="flex-item">
-					<a href="hover-state_2.html">HOVER 3</a>
+					<a href="hover-state_2.html">3</a>
 				</div>
 				<div class="flex-item">
-					<a href="hover-state_3">HOVER 4</a>
+					<a href="hover-state_3">4</a>
 				</div>
 				<div class="flex-item">
-					<a href="hover-state_4">HOVER 5</a>
+					<a href="hover-state_4">5</a>
 				</div>
-			</ul>
 		</div>
 	</div>
 </body>
