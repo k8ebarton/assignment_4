@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Translate</title>
+	<style type="text/css">
+		body {
+			background-color: white;
+		}
+
+		.image-box {
+			position: relative;
+			top: 100px: 
+			width: 100%;
+		}
+		.image {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+		.overlay {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 100%;
+			width: 100%;
+			opacity: 0;
+			transition: .5s ease;
+			background-color: black;
+		}
+		.image-box:hover .overlay {
+			opacity: 1;
+		}
+		.text {
+			color: white;
+			font-size: 60px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			text-align: center;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="image-box">
+		<img src="matisse8_0.jpg" alt="Avatar" class="image">
+		<div class="overlay">
+			<div class="text">Matisse Cut-Outs</div>
+		</div>
+	</div>
+</body>
+</html>
